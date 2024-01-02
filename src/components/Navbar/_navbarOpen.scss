@@ -1,0 +1,49 @@
+.contenedorPrincipalOpen{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.911);
+    z-index: 400000;
+    .contenedorInternoOpen{
+        width: 100%;
+        height: 90%;
+        margin-top: 50px;
+        padding-top: 10%;
+        display: flex;
+        justify-content: center;
+        .contenedorNav{
+            width: 80%;
+            height: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: solid 1px rgba(175, 129, 79, 0.534);
+            .secciones{
+                width: 100%;
+                height: 80%;
+                display: flex;
+                flex-direction: column;
+                list-style: none;
+                margin-left: -40px;
+                justify-content: center;
+                li{
+                    display: flex;
+                    width: 100%;
+                    height: 33%;
+                    margin-right: 200px;
+                    color: #fff;
+                    transition: all 0.2s;
+                    user-select: none;
+                    cursor: pointer;
+                    justify-content: center;
+                    align-items: center;
+                }
+                li:hover{
+                    color:  #D19F68;
+                    background-color: rgba(0, 0, 0, 0.637) !important;
+                    
+                }
+            }
+        }
+    }
+}

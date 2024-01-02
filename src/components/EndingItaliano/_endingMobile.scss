@@ -1,0 +1,158 @@
+@media (max-width:600px){ 
+    .contenedorFinal{
+        width: 100%;
+        height: auto;
+        .contenedorTitulo{
+            width: 100%;
+            height: 20%;
+            display: flex;
+            flex-direction: column-reverse;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 30px;
+            .interiorTitulo{
+                width: 100%;
+                height: 70%;
+                h3{
+                    font-weight: 600;
+                    font-size: 1.6rem;
+                }
+                .marron{
+                    color: #D19F68 !important;
+                    font-weight: 700;
+                }
+            }
+        }
+        .contenedorIcono{
+            width: 100%;
+            height: 10%;
+            display: flex;
+            align-items: center;
+            .circuloIcono{
+                width: 50px;
+                height: 50px;
+                border-radius: 100%;
+                margin-left: 10px;
+                background-color: #333333;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .instagram{
+                    color: #fff;
+                    font-size: 1.5em;
+                }
+            }
+            .nombreDeft{
+                margin-left: 5px;
+                font-size: 1rem;
+                font-weight: 500;
+            }
+        }
+        .contenedorFotos{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            .contenedorInternoFotos{
+                width: 90%;
+                height: 100%;
+            }
+            .foto{
+                width: 95%;
+                height: 350px;
+                margin-top: 10px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .foto1{
+                background-image: url("./img/insta_downloader-1663232425927.jpg"); 
+                background-color: #00000000; 
+                background-position: center; 
+                background-repeat: no-repeat; 
+                background-size: cover; 
+            }
+            .foto2{
+                background-image: url("./img/insta_downloader-1663232691491.jpg"); 
+                background-color: #00000000; 
+                background-position: center; 
+                background-repeat: no-repeat; 
+                background-size: cover; 
+            }
+            .foto3{
+                background-image: url("./img/insta_downloader-1663232832102.jpg"); 
+                background-color: #00000000; 
+                background-position: center; 
+                background-repeat: no-repeat; 
+                background-size: cover; 
+            }
+            .foto4{
+                background-image: url("./img/insta_downloader-1663575223165.jpg"); 
+                background-color: #00000000; 
+                background-position: center; 
+                background-repeat: no-repeat; 
+                background-size: cover; 
+            }
+            .foto5{
+                background-image: url("./img/insta_downloader-1663576607043.jpg"); 
+                background-color: #00000000; 
+                background-position: center; 
+                background-repeat: no-repeat; 
+                background-size: cover;
+            }
+            .foto6{
+                background-image: url("./img/LogoLicious_20210503_135606.png"); 
+                background-color: #00000000; 
+                background-position: center; 
+                background-repeat: no-repeat; 
+                background-size: cover;
+            }
+            .foto7{
+                background-image: url("./img/LogoLicious_20210504_181842.png"); 
+                background-color: #00000000; 
+                background-position: center; 
+                background-repeat: no-repeat; 
+                background-size: cover;
+            }
+            .foto8{
+                background-image: url("./img/Point\ Blur_Aug122019_211118.jpg"); 
+                background-color: #00000000; 
+                background-position: center; 
+                background-repeat: no-repeat; 
+                background-size: cover;
+            }
+            .foto9{
+                background-image: url("../../../public/img/1.jpg"); 
+                background-color: #00000000; 
+                background-position: center; 
+                background-repeat: no-repeat; 
+                background-size: cover;
+            }
+
+        }
+        .ultimoContenedor{
+            width: 100%;
+            height: 20vh;
+            display: flex;
+            justify-content: center;
+            .cuadradoRedondeadoFollow{
+                width: 150px;
+                height: 55px;
+                background: rgb(0,0,0);
+                color: rgb(255,255,255);
+                border-radius: 4px;
+                box-sizing: border-box;
+                margin-top: 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                font-size: 0.8rem;
+            }
+        }
+    }
+}
