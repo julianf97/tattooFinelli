@@ -10,7 +10,7 @@ import "./_presentacionMobile.scss";
 
 const CANTIDAD_DE_PRESENTACIONES = 2;
 
-export const Presentacion = React.forwardRef((props, ref) => {
+export const Presentacion = React.memo(React.forwardRef((props, ref) => {
   const [presentacionIndex, setPresentacionIndex] = useState(1);
   const controls = useAnimation();
   const [animationCompleted, setAnimationCompleted] = useState(false);
@@ -19,7 +19,7 @@ export const Presentacion = React.forwardRef((props, ref) => {
   const titleText = "Deft Ink";
   const subtittleText = "SAN DIEGO TATTOO ARTIST";
   const buttonText = "MAKE ME AN APPOINTMENT NOW";
-  const secondTitleText = "Bring your idea to life";
+  const secondTitleText = "Bring your idea to life...";
   const secondSubtitleText = "CONTACT ME FOR A CONSULTATION";
 
   const transitionsVariants = {
@@ -228,4 +228,4 @@ export const Presentacion = React.forwardRef((props, ref) => {
       </div>
     </div>
   );
-});
+}));
