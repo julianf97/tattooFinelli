@@ -4,11 +4,9 @@ import { Navbar } from './components/Navbar/Navbar'
 import { LenguajeProvider } from './context/LenguajeContext/LenguajeContext'
 import { NavbarProvider } from './context/NavbarContext/NavbarContext'
 import AppLoading from './components/AppLoading/AppLoading.jsx'
-import { useEffect } from 'react'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 function App() {
-
   const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
@@ -16,31 +14,29 @@ function App() {
       setLoaded(true);
     };
 
-    // Agrega el evento load al objeto window
-    window.addEventListener('load', handleLoad);
+    // Evento 'DOMContentLoaded' en lugar de 'load'
+    document.addEventListener('DOMContentLoaded', handleLoad);
 
-    // Limpia el evento cuando el componente se desmonta
     return () => {
-      window.removeEventListener('load', handleLoad);
+      document.removeEventListener('DOMContentLoaded', handleLoad);
     };
-  }, []); // El segundo argumento [] asegura que este efecto se ejecute solo una vez al montar el componente
-
+  }, []);
 
   return (
     <>
       {loaded ? (
         <LenguajeProvider>
-        <NavbarProvider>
-        <AppRouter>
-          <Navbar/>
-        </AppRouter>
-        </NavbarProvider>
+          <NavbarProvider>
+            <AppRouter>
+              <Navbar />
+            </AppRouter>
+          </NavbarProvider>
         </LenguajeProvider>
       ) : (
-        <AppLoading/>
+        <AppLoading />
       )}
     </>
-  )
+  );
 }
 
-export default App
+export default App;
