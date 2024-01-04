@@ -124,11 +124,11 @@
 
       .contenedorSubTitulo {
         width: 100%;
-        height: 100%;
-        color: rgb(175, 129, 79);
+        height: auto;
+        color: rgb(238, 175, 108);
         font-size: 25px;
-        font-weight: 300 !important;
-        letter-spacing: -1.5px;
+        font-weight: 200 !important;
+        letter-spacing: 0.5px;
         font-family: 'Saira Condensed', sans-serif !important;
         margin-top: -10px;
         user-select: none;
@@ -148,8 +148,12 @@
           font-size: 1em;
           font-weight: 500;
           font-family: 'Saira Condensed', sans-serif !important;
-          user-select: none;
-                }
+          cursor: pointer !important;
+          transition: all 0.3s;
+        }
+        .btn:hover{
+          background-color: #916c46;
+        }
       }
     }
   }
