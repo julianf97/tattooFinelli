@@ -11,7 +11,10 @@ function App() {
 
   useEffect(() => {
     const handleLoad = () => {
-      setLoaded(true);
+      // Agrega un tiempo de espera después de la carga para asegurar que todo se asiente bien
+      setTimeout(() => {
+        setLoaded(true);
+      }, 5000); // Puedes ajustar el tiempo según sea necesario
     };
 
     // Verificar si el documento ya ha sido completamente cargado

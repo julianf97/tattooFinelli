@@ -134,15 +134,16 @@ export const Presentacion = React.memo(React.forwardRef((props, ref) => {
 
   return (
     <div className={`contenedorGeneral`} ref={ref}>
-      <AnimatePresence exitBeforeEnter={false} mode="wait">
-        <motion.div
-          key={presentacionIndex}
-          className={`contenedorImagen presentacion${presentacionIndex}`}
-          initial={transitionsVariants.initial}
-          animate={transitionsVariants.visible}
-          exit={transitionsVariants.hidden}
-        />
-      </AnimatePresence>
+<AnimatePresence exitBeforeEnter={false} mode="wait">
+  <motion.div
+    key={presentacionIndex}
+    className={`contenedorImagen presentacion${presentacionIndex}`}
+    initial={transitionsVariants.initial}
+    animate={transitionsVariants.visible}
+    exit={transitionsVariants.hidden}
+    style={{ display: window.innerWidth < 600 ? 'none' : 'block' }}
+  />
+</AnimatePresence>
       <div className="contenedorTituloyBtn">
         <div className="contenedorInternoTituloyBtn">
           <div className="contenedorTitulo">
