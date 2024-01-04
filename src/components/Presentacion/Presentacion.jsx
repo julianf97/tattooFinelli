@@ -4,6 +4,9 @@
 import React, { useState, useEffect } from "react";
 import { motion, useAnimation, AnimatePresence } from "framer-motion";
 import "./_presentacionDesktop.scss";
+import "./_presentacionIpad.scss";
+import "./_presentacionMobile.scss";
+
 
 const CANTIDAD_DE_PRESENTACIONES = 2;
 
@@ -217,7 +220,7 @@ export const Presentacion = React.forwardRef((props, ref) => {
             animate="visible"
             variants={contenedorBtnVariants}
             className="contenedorBtn"
-            key={presentacionIndex} // Agrega la propiedad key para forzar la recreación del componente
+            key={presentacionIndex} 
           >
             <button onClick={handleOpenWhatsApp} className="btn">{buttonText}</button>
           </motion.div>
