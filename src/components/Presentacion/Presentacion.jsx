@@ -19,7 +19,7 @@ export const Presentacion = React.memo(React.forwardRef((props, ref) => {
   const titleText = "Deft Ink";
   const subtittleText = "SAN DIEGO TATTOO ARTIST";
   const buttonText = "MAKE ME AN APPOINTMENT NOW";
-  const secondTitleText = "Bring your idea to life...";
+  const secondTitleText = "Bring your idea to life";
   const secondSubtitleText = "CONTACT ME FOR A CONSULTATION";
 
   const transitionsVariants = {
