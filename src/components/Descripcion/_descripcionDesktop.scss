@@ -9,7 +9,18 @@
         width: 100%;
         height: auto;
         padding-top: 40px;
-        padding-bottom: 80px;
+        padding-bottom: 40px !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 100px !important;
+        .internoDescripcion{
+            display: flex;
+            justify-content: center;
+            width: 80%;
+            height: auto;
+        }
         .tituloDescripcion{
             width: 100%;
             height: 20%;
@@ -17,6 +28,7 @@
             justify-content: end;
             align-items: center;
             flex-direction: column;
+            padding-bottom: 60px;
             h2{
                 font-weight: 500;
                 font-size: 1.8rem;
@@ -32,19 +44,38 @@
             }
         }
         .contenedorParrafo{
-            width: 100%;
+            width: 50% !important;
             height: 80%;
             display: flex;
             justify-content: center;
             .internoParrafo{
-                width: 70%;
+                width: 80%;
                 height: 80%;
-                text-align: center;
+                text-align: start !important;
                 p{
                     color: #555;
-                    font-size: 17px;
-                    line-height: 30px;
+                    font-size: 16px;
+                    line-height: 26px;
                     font-style: italic;
+                }
+            }
+        }
+        .contenedorImagen{
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            .internoImagen{
+                width: 100%;
+                height: 100%;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: top;
                 }
             }
         }

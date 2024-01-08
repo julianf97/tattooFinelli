@@ -12,7 +12,6 @@ import { EndingItaliano } from "../components/EndingItaliano/EndingItaliano";
 import { LenguajeContext } from "../context/LenguajeContext/LenguajeContext";
 import { NavbarContext } from "../context/NavbarContext/NavbarContext";
 import { useContext, useRef, useEffect, useState } from "react";
-import "./_appRouter.scss";
 
 export const AppRouter = () => {
   const refPresentacion = useRef(null);
@@ -43,6 +42,7 @@ export const AppRouter = () => {
   }, []);
 
   return (
+    <>
     <div className="AppRouter">
       {<Navbar isPresentacionVisible={isPresentacionVisible} />}
       {isOpen ? <NavbarOpen /> : <div></div>}
@@ -52,5 +52,6 @@ export const AppRouter = () => {
       {inglesElegido ? <Book /> : <BookItaliano />}
       {inglesElegido ? <Ending /> : <EndingItaliano />}
     </div>
+    </>
   );
 };

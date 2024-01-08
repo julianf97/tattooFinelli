@@ -4,9 +4,12 @@ import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 import './_endingMobile.scss';
 import './_endingIpad.scss';
 import './_endingDesktop.scss';
+import { Link } from 'react-router-dom';
 
 
 export const Ending = () => {
+
+    const instagramUrl = 'https://www.instagram.com/sr.finellitattoos/'
 
     return(
         <section>
@@ -56,10 +59,12 @@ export const Ending = () => {
                     </div>
                 </div>
                 <div className='ultimoContenedor'>
-                    <div className='cuadradoRedondeadoFollow'>
-                        <FontAwesomeIcon className='instagram' icon={ faInstagram }></FontAwesomeIcon>
-                        Follow on Instagram
-                    </div>
+                    <Link to={instagramUrl} target="_blank" rel="noopener noreferrer" className='link'>
+                        <div className='cuadradoRedondeadoFollow'>
+                            <FontAwesomeIcon className='instagram' icon={ faInstagram }></FontAwesomeIcon>
+                            Follow on Instagram
+                        </div>
+                    </Link>
                 </div>
             </div>
         </section>

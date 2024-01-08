@@ -1,4 +1,4 @@
-@media (max-width: 600px) {
+@media (max-width: 743px) {
   .contenedorPrincipalSecciones {
     width: 100%;
     height: 150vh;
@@ -30,13 +30,14 @@
           font-weight: 800;
           border-top: solid 1px rgb(0, 0, 0);
           border-bottom: solid 1px rgb(0, 0, 0);
+          user-select: none;
+          cursor: pointer;
         }
       }
 
       &:hover {
         .contenedorSeccion h3 {
           filter: grayscale(0%);
-          transition: filter 0.2s; /* Suaviza la transición del filtro */
         }
       }
 
@@ -49,7 +50,6 @@
         left: 0;
         background-size: cover;
         filter: grayscale(100%);
-        transition: filter 0.2s; /* Suaviza la transición del filtro */
       }
 
       &.seccion:hover::before {

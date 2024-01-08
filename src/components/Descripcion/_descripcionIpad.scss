@@ -5,7 +5,10 @@
         width: 100%;
         height: auto;
         padding-top: 40px;
-        padding-bottom: 80px;
+        padding-bottom: 00px !important;
+        .internoDescripcion{
+            display: flex;
+        }
         .tituloDescripcion{
             width: 100%;
             height: 20%;
@@ -28,7 +31,7 @@
             }
         }
         .contenedorParrafo{
-            width: 100%;
+            width: 50% !important;
             height: 80%;
             display: flex;
             justify-content: center;
@@ -41,6 +44,22 @@
                     font-size: 16px;
                     line-height: 26px;
                     font-style: italic;
+                }
+            }
+        }
+        .contenedorImagen{
+            width: 50%;
+            height: 700px;
+            display: flex;
+            justify-content: center;
+            padding-bottom: 30px;
+            .internoImagen{
+                width: 100%;
+                height: 100%;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
                 }
             }
         }
