@@ -21,7 +21,7 @@ export const Navbar = ({ isPresentacionVisible }) => {
     inglesElegido,
   } = useContext(LenguajeContext);
 
-  const { handleClickOpen, handleExitNavbar } = useContext(NavbarContext);
+  const { handleClickOpen, handleExitNavbar, isOpen } = useContext(NavbarContext);
 
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
   const controls = useAnimation();
@@ -72,6 +72,7 @@ export const Navbar = ({ isPresentacionVisible }) => {
               }}
               size={30}
               color="#AF814F"
+              toggled={isOpen}
             />
           )}
           <div className="contenedorLogoDesktop"></div>

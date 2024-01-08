@@ -11,7 +11,7 @@
         @media only screen and (min-width:1026px){ display: none; }
     }
     .contenedorInternoOpen{
-        @media (max-width: 600px) {width: 60%;}
+        @media (max-width: 600px) {width: 50%;}
         @media only screen and (min-width:601px) and (max-width:1025px){ width: 30%; }
         @media only screen and (min-width:1026px){ display: none; }
         background-color: rgba(0, 0, 0, 0.911);

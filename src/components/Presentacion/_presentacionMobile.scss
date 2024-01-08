@@ -44,10 +44,24 @@
         justify-content: center;
         align-items: center;
         z-index: 9000000;
-        background-image: url("../../../public/img/presentacion2.jpg");
         .contenedorImagen{
-          border: solid 1px red;
-          display: none !important;
+          width: 100%;
+          height: 100%;
+          overflow: hidden;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          transition: background-image 1s ease-in-out;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          &.presentacion1 {
+            background-image: url("../../../public/img/presentacion1.jpg");
+          }
+    
+          &.presentacion2 {
+            background-image: url("../../../public/img/presentacion2.jpg");
+          }
         }
         img {
             width: 100%;

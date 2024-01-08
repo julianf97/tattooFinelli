@@ -140,7 +140,6 @@ export const Presentacion = React.memo(
             initial={transitionsVariants.initial}
             animate={transitionsVariants.visible}
             exit={transitionsVariants.hidden}
-            style={{ display: window.innerWidth < 600 ? "none" : "block" }}
           />
         </AnimatePresence>
         <div className="contenedorTituloyBtn">

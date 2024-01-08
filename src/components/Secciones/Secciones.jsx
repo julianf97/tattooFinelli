@@ -1,7 +1,7 @@
-import React from "react";
 import "./_seccionesMobile.scss";
 import "./_seccionesIpad.scss";
 import "./_seccionesDesktop.scss";
+
 
 export const Secciones = () => {
   return (
