@@ -21,7 +21,7 @@ export const Navbar = ({ isPresentacionVisible }) => {
     inglesElegido,
   } = useContext(LenguajeContext);
 
-  const { handleClickOpen } = useContext(NavbarContext);
+  const { handleClickOpen, handleExitNavbar } = useContext(NavbarContext);
 
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
   const controls = useAnimation();
@@ -39,8 +39,14 @@ export const Navbar = ({ isPresentacionVisible }) => {
   }, []);
 
   useEffect(() => {
-    controls.start({ opacity: isPresentacionVisible ? 0 : 1 });
-  }, [isPresentacionVisible, controls]);
+    if (isPresentacionVisible) {
+      handleExitNavbar();
+      controls.start({ opacity: 0 });
+    } else {
+      controls.start({ opacity: 1 });
+    }
+  }, [isPresentacionVisible, controls, handleExitNavbar]);
+  
 
   return (
     <motion.div
@@ -60,7 +66,8 @@ export const Navbar = ({ isPresentacionVisible }) => {
                 if (toggled) {
                   handleClickOpen();
                 } else {
-                  handleClickOpen();
+
+                  handleExitNavbar()
                 }
               }}
               size={30}

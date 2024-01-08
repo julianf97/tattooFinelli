@@ -6,7 +6,7 @@
         width: 100%;
         height: 50px;
         position: fixed;
-        background-color: rgba(0, 0, 0, 0.432);
+        background-color: rgba(0, 0, 0, 0.911);
         justify-content: center;
         z-index: 500000;
         display: flex;
@@ -164,7 +164,7 @@
         
                 }
                 .contenedorIdioma{
-                    width: 290px !important;
+                    width: 200px !important;
                     height: 100%;
                     display: flex;
                     justify-content: center;
@@ -173,7 +173,7 @@
                     .selectorIdioma{
                         width: 85px !important;
                         height: 80px;
-                        background-color: rgba(0, 0, 0, 0.432);
+                        background-color: rgba(0, 0, 0, 0.911);
                         border-radius: 0rem 0 0.75rem 0.75rem;
                         display: flex;
                         justify-content: center;
@@ -217,7 +217,7 @@
                                 }
                             }
                             .contenedorITA:hover{
-                                background-color: rgba(0, 0, 0, 0.274);
+                                background-color: rgba(255, 255, 255, 0.274);
                             } 
                 
                             .contenedorENG{
@@ -254,7 +254,7 @@
                                 }
                             }
                             .contenedorENG:hover{
-                                background-color: rgba(0, 0, 0, 0.274);
+                                background-color: rgba(255, 255, 255, 0.274);
                             } 
                         }
                     }
