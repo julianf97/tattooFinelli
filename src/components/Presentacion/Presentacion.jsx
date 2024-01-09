@@ -16,8 +16,8 @@ export const Presentacion = React.memo(
     const [animationCompleted, setAnimationCompleted] = useState(false);
     const [titleVisible, setTitleVisible] = useState(false);
 
-    const titleText = "Deft Ink";
-    const subtittleText = "SAN DIEGO TATTOO ARTIST";
+    const titleText = "Sr Finelli Tattoos";
+    const subtittleText = "BOLOGNA TATTOO ARTIST";
     const buttonText = "MAKE ME AN APPOINTMENT NOW";
     const secondTitleText = "Bring your idea to life";
     const secondSubtitleText = "CONTACT ME FOR A CONSULTATION";

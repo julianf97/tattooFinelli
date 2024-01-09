@@ -8,6 +8,10 @@ body {
   overflow-x: hidden !important;
 }
 
+.link{
+  text-decoration: none !important;
+}
+
 input[type="submit"],
 input[type="reset"],
 input[type="button"],

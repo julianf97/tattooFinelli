@@ -1,6 +1,14 @@
-import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
+import foto1 from "../../assets/img/endingPic/foto1.jpg" 
+import foto2 from "../../assets/img/endingPic/foto2.jpg" 
+import foto3 from "../../assets/img/endingPic/foto3.jpg" 
+import foto4 from "../../assets/img/endingPic/foto4.jpg"  
+import foto5 from "../../assets/img/endingPic/foto5.png" 
+import foto6 from "../../assets/img/endingPic/foto6.jpg" 
+import foto7 from "../../assets/img/endingPic/foto7.jpg" 
+import foto8 from "../../assets/img/endingPic/foto8.png" 
+import { Link } from 'react-router-dom';
 import './_endingMobile.scss';
 import './_endingIpad.scss';
 import './_endingDesktop.scss';
@@ -8,13 +16,17 @@ import './_endingDesktop.scss';
 
 export const EndingItaliano = () => {
 
+    const instagramUrl = 'https://www.instagram.com/sr.finellitattoos/'
+
     return(
         <section>
             <div className='contenedorFinal'>
                 <div className='contenedorTitulo'>
                     <div className='interiorTitulo'>
                         <h3>VISITAMI SU INSTAGRAM<br/>
-                            <span className='marron'>@deft_ink</span>
+                        <Link to={instagramUrl} target="_blank" rel="noopener noreferrer" className='link'>
+                            <span className='marron'>@sr.finellitattoos</span>
+                        </Link>
                         </h3>
                     </div>
                 </div>
@@ -22,44 +34,43 @@ export const EndingItaliano = () => {
                     <div className='circuloIcono'>
                         <FontAwesomeIcon className='instagram' icon={ faInstagram }></FontAwesomeIcon>
                     </div>
-                    <h6 className='nombreDeft'>deft_ink</h6>
+                    <h6 className='nombreDeft'>sr.finellitattoos</h6>
                 </div>
                 <div className='contenedorFotos'>
                     <div className='contenedorInternoFotos'>
-                        <div className='foto foto1'>
-
+                    <div className='foto'>
+                            <img src={foto1} alt='firstpicture'></img>
                         </div>
-                        <div className='foto foto2'>
-    
+                        <div className='foto'>
+                            <img src={foto2} alt='firstpicture'></img>
                         </div>
-                        <div className='foto foto3'>
-    
+                        <div className='foto'>
+                            <img src={foto3} alt='firstpicture'></img>
                         </div>
-                        <div className='foto foto4'>
-    
+                        <div className='foto'>
+                            <img src={foto4} alt='firstpicture'></img>
                         </div>
-                        <div className='foto foto5'>
-    
+                        <div className='foto'>
+                            <img src={foto5} alt='firstpicture'></img>
                         </div>
-                        <div className='foto foto6'>
-    
+                        <div className='foto'>
+                            <img src={foto6} alt='firstpicture'></img>
                         </div>
-                        <div className='foto foto7'>
-    
+                        <div className='foto'>
+                            <img src={foto7} alt='firstpicture'></img>
                         </div>
-                        <div className='foto foto8'>
-    
-                        </div>
-                        <div className='foto foto9'>
-    
+                        <div className='foto '>
+                            <img src={foto8} alt='firstpicture'></img>
                         </div>
                     </div>
                 </div>
                 <div className='ultimoContenedor'>
-                    <div className='cuadradoRedondeadoFollow'>
-                        <FontAwesomeIcon className='instagram' icon={ faInstagram }></FontAwesomeIcon>
-                        Seguimi su Instagram
-                    </div>
+                    <Link to={instagramUrl} target="_blank" rel="noopener noreferrer" className='link'>
+                        <div className='cuadradoRedondeadoFollow'>
+                            <FontAwesomeIcon className='instagram' icon={ faInstagram }></FontAwesomeIcon>
+                            Follow on Instagram
+                        </div>
+                    </Link>
                 </div>
             </div>
         </section>
