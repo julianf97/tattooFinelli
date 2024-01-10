@@ -32,9 +32,13 @@ export const EndingItaliano = () => {
                 </div>
                 <div className='contenedorIcono'>
                     <div className='circuloIcono'>
-                        <FontAwesomeIcon className='instagram' icon={ faInstagram }></FontAwesomeIcon>
+                        <Link to={instagramUrl} target="_blank" rel="noopener noreferrer"> 
+                            <FontAwesomeIcon className='instagram' icon={ faInstagram }></FontAwesomeIcon>
+                        </Link>
                     </div>
-                    <h6 className='nombreDeft'>sr.finellitattoos</h6>
+                    <Link to={instagramUrl} target="_blank" rel="noopener noreferrer" className='link'> 
+                        <h6 className='nombreDeft'>sr.finellitattoos</h6>
+                    </Link>
                 </div>
                 <div className='contenedorFotos'>
                     <div className='contenedorInternoFotos'>

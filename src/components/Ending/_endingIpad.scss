@@ -37,7 +37,7 @@
                 width: 50px;
                 height: 50px;
                 border-radius: 100%;
-                margin-left: 10px;
+                margin-left: 30px !important;
                 background-color: #333333;
                 display: flex;
                 justify-content: center;
@@ -51,6 +51,7 @@
                 margin-left: 5px;
                 font-size: 1rem;
                 font-weight: 500;
+                color: #000 !important;
             }
         }
         .contenedorFotos{

@@ -1,11 +1,19 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAnchor} from '@fortawesome/free-solid-svg-icons';
-import React from 'react'
 import './_bookMobile.scss'
 import './_bookIpad.scss'
 import './_bookDesktop.scss'
 
 export const Book = () => {
+
+    const handleEmailMe = () => {
+        const destinatario = 'juanmfinelli@hotmail.com';
+        const asunto = 'I want to book an appointment';
+
+        const mailtoLink = `mailto:${destinatario}?subject=${encodeURIComponent(asunto)}`;
+
+        window.location.href = mailtoLink;
+    }
 
     return(
        <section className='contenedorBook'>
@@ -23,7 +31,7 @@ export const Book = () => {
                 </div>
             </div>
             <div className='contenedorBtn'>
-                <button className='BtnEmailMe'>Email Me Today</button>
+                <button className='BtnEmailMe' onClick={handleEmailMe}>Email Me Today</button>
             </div>
             <div className='contenedorFinalBook'>
                 <div className='contenedorSegundaAncla'>

@@ -10,6 +10,7 @@ body {
 
 .link{
   text-decoration: none !important;
+  color: #000;
 }
 
 input[type="submit"],

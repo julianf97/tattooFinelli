@@ -11,8 +11,7 @@ export const BookItaliano = () => {
         const asunto = 'Richiesta appuntamento';
 
         const mailtoLink = `mailto:${destinatario}?subject=${encodeURIComponent(asunto)}`;
-
-        // Intentar abrir el cliente de correo electrónico
+        
         window.location.href = mailtoLink;
     }
 

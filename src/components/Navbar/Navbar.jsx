@@ -41,9 +41,9 @@ export const Navbar = ({ isPresentacionVisible }) => {
   useEffect(() => {
     if (isPresentacionVisible) {
       handleExitNavbar();
-      controls.start({ opacity: 0 });
+      controls.start({ opacity: 0, visibility: "hidden" });
     } else {
-      controls.start({ opacity: 1 });
+      controls.start({ opacity: 1, visibility: "visible" });
     }
   }, [isPresentacionVisible, controls, handleExitNavbar]);
   
