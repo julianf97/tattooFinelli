@@ -11,6 +11,8 @@ import reinoUnido from "../../assets/img/reinoUnido.png";
 import { useContext, useState, useEffect } from "react";
 import { LenguajeContext } from "../../context/LenguajeContext/LenguajeContext";
 import { NavbarContext } from "../../context/NavbarContext/NavbarContext";
+import logo from "../../../public/img/logo.png"
+import { Link } from "react-router-dom";
 
 export const Navbar = ({ isPresentacionVisible }) => {
   const {
@@ -75,10 +77,14 @@ export const Navbar = ({ isPresentacionVisible }) => {
               toggled={isOpen}
             />
           )}
-          <div className="contenedorLogoDesktop"></div>
+          <div className="contenedorLogoDesktop">
+            <Link to="/"><img src={logo} alt="logo"/></Link>
+          </div>
         </div>
         <div className="contenedorMedio">
-          <div className="contenedorLogoMobile"></div>
+          <div className="contenedorLogoMobile">
+            <Link to="/"><img src={logo} alt="logo"/></Link>
+          </div>
           <div className="contenedorNavbarDesktop">
             <div className="contenedorNavbarInteriorDesktop">
               <nav>

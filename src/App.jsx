@@ -39,7 +39,7 @@ function App() {
               <BrowserRouter>
                 <Routes>
                   <Route path='/' element={<AppRouter><Navbar/></AppRouter>}></Route>
-                  <Route path='/blackandgrey' element={<BlackAndGrey/>}></Route>
+                  <Route path='/blackandgrey' element={<BlackAndGrey><Navbar/></BlackAndGrey>}></Route>
                   <Route path='/commissionedart' element={<CommissionedArt/>}></Route>
                   <Route path='/lettering' element={<Lettering/>}></Route>
                   <Route path="/*" element={<Navigate to="/" replace />} />
