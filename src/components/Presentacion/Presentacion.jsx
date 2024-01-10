@@ -17,10 +17,10 @@ export const Presentacion = React.memo(
     const [titleVisible, setTitleVisible] = useState(false);
 
     const titleText = "Sr Finelli Tattoos";
-    const subtittleText = "BOLOGNA TATTOO ARTIST";
-    const buttonText = "MAKE ME AN APPOINTMENT NOW";
-    const secondTitleText = "Bring your idea to life";
-    const secondSubtitleText = "CONTACT ME FOR A CONSULTATION";
+    const subtittleText = "TATUATORE BOLOGNESE";
+    const buttonText = "FISSAMI SUBITO UN APPUNTAMENTO";
+    const secondTitleText = "Dai vita alla tua idea";
+    const secondSubtitleText = "CONTATTAMI PER UNA CONSULENZA";
 
     const transitionsVariants = {
       hidden: {
@@ -124,7 +124,7 @@ export const Presentacion = React.memo(
 
     const handleOpenWhatsApp = () => {
       const phoneNumber = "+393317347067";
-      const message = "Hola, estoy interesado en tus servicios de tatuaje";
+      const message = "Ciao, sono interessato ai tuoi servizi di tatuaggio";
 
       const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 

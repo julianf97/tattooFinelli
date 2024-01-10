@@ -3,13 +3,13 @@ import { useContext } from 'react';
 import { LenguajeContext } from "../../context/LenguajeContext/LenguajeContext";
 import './_navbarOpen.scss';
 import { NavbarContext } from '../../context/NavbarContext/NavbarContext';
-
+import { Link } from "react-router-dom";
 export const NavbarOpen = () => {
   const { inglesElegido } = useContext(LenguajeContext);
   const { handleExitNavbar, isMenuOpen } = useContext(NavbarContext);
 
   if (!isMenuOpen) {
-    return null; // No renderizar si el menú no está abierto
+    return null; 
   }
 
   return (
@@ -18,13 +18,13 @@ export const NavbarOpen = () => {
         <div className='contenedorNav'>
           <ul className='secciones'>
             {
-              inglesElegido ? <li>BLACK AND GREY</li> : <li>NERO E GRIGIO</li>
+              inglesElegido ? <Link className="linkNavbar" to={"/blackandgrey"}>BLACK & GRAY </Link> : <li><Link className="linkNavbar" to={"/blackandgrey"}>NERO E GRIGIO </Link></li>
             }
             {
-              inglesElegido ? <li>LETTERING</li> : <li>SCRITTURA</li>
+              inglesElegido ? <Link className="linkNavbar" to={"/lettering"}>LETTERING </Link> : <Link className="linkNavbar" to={"/lettering"}>SCRITTURA </Link>
             }
             {
-              inglesElegido ? <li>COMMISSIONED ART</li> : <li>COMMISSIONE ART</li>
+              inglesElegido ? <Link className="linkNavbar" to={"/commissionedart"}>COMMISSIONED ART </Link>: <Link className="linkNavbar" to={"/commissionedart"}>COMMISSIONE ART </Link>
             }
           </ul>
         </div>
