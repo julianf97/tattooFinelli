@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faAnchor} from '@fortawesome/free-solid-svg-icons';
+import { faPenNib } from '@fortawesome/free-solid-svg-icons';
 import './_bookMobile.scss'
 import './_bookIpad.scss'
 import './_bookDesktop.scss'
@@ -18,7 +18,7 @@ export const Book = () => {
     return(
        <section className='contenedorBook'>
             <div className='contenedorAncla'>
-                <FontAwesomeIcon className='ancla' icon={ faAnchor }></FontAwesomeIcon>
+                <FontAwesomeIcon className='ancla' icon={ faPenNib }></FontAwesomeIcon>
             </div>
             <div className='contenedorTitulo'>
                 <h3>BOOK AN APPOIMENT</h3>
@@ -26,7 +26,7 @@ export const Book = () => {
             <div className='contenedorParrafoPrimero'>
                 <div className='contenedorInteriorParrafo'>
                     <p className='parrafoPrimero'>
-                    Contact me through email at 61904rex@gmail.com to get the process started. Please provide detailed reference ideas, placement and size.
+                    Contact me through email at juanmfinelli@hotmail.com to get the process started. Please provide detailed reference ideas, placement and size.
                     </p>
                 </div>
             </div>
@@ -35,7 +35,7 @@ export const Book = () => {
             </div>
             <div className='contenedorFinalBook'>
                 <div className='contenedorSegundaAncla'>
-                    <FontAwesomeIcon className='ancla' icon={ faAnchor }></FontAwesomeIcon>
+                    <FontAwesomeIcon className='ancla' icon={ faPenNib }></FontAwesomeIcon>
                 </div>
                 <div className='contenedorTitulo segundoTitulo'>
                     <h3>CUSTOM ART FOR SALE</h3>

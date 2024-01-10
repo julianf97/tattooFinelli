@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAnchor } from '@fortawesome/free-solid-svg-icons';
+import { faPenNib } from '@fortawesome/free-solid-svg-icons';
 import './_bookMobile.scss';
 import './_bookIpad.scss';
 import './_bookDesktop.scss';
@@ -18,7 +18,7 @@ export const BookItaliano = () => {
     return (
         <section className='contenedorBook'>
             <div className='contenedorAncla'>
-                <FontAwesomeIcon className='ancla' icon={faAnchor}></FontAwesomeIcon>
+                <FontAwesomeIcon className='ancla' icon={ faPenNib }></FontAwesomeIcon>
             </div>
             <div className='contenedorTitulo'>
                 <h3>PRENOTA UN APPUNTAMENTO</h3>
@@ -26,7 +26,7 @@ export const BookItaliano = () => {
             <div className='contenedorParrafoPrimero'>
                 <div className='contenedorInteriorParrafo'>
                     <p className='parrafoPrimero'>
-                        Contattami tramite email all'indirizzo 61904rex@gmail.com per avviare il processo. Fornisci dettagliate idee di riferimento, posizione e dimensioni.
+                        Contattami tramite email all'indirizzo juanmfinelli@hotmail.com per avviare il processo. Fornisci dettagliate idee di riferimento, posizione e dimensioni.
                     </p>
                 </div>
             </div>
@@ -35,7 +35,7 @@ export const BookItaliano = () => {
             </div>
             <div className='contenedorFinalBook'>
                 <div className='contenedorSegundaAncla'>
-                    <FontAwesomeIcon className='ancla' icon={faAnchor}></FontAwesomeIcon>
+                    <FontAwesomeIcon className='ancla' icon={ faPenNib }></FontAwesomeIcon>
                 </div>
                 <div className='contenedorTitulo segundoTitulo'>
                     <h3>ARTE PERSONALIZZATA IN VENDITA</h3>
