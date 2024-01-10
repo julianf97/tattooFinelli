@@ -124,12 +124,12 @@
         .contenedorAbsoluto{
             position: absolute;
             width: 100%;
-            margin-top: 100px;
             height: 50px !important;
             position: fixed;
             justify-content: center;
             display: flex;
             align-items: center;
+            margin-top: 10px;
             .contenedorInteriorAbsoluto{
                 width: 100% !important;
                 height: 80%;
@@ -177,7 +177,7 @@
                         display: flex;
                         justify-content: center;
                         align-items: center;
-                        margin-right: 35px;
+                        margin-right: 50px;
                         .contenedorInternoIdiomas{
                             width: 90%;
                             height: 90%;

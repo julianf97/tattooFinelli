@@ -61,6 +61,7 @@
           justify-content: center;
           width: auto;
           cursor: pointer;
+          margin-left: 20px;
         }
 
         .contenedorImg {
@@ -123,7 +124,6 @@
     .contenedorAbsoluto {
       position: absolute;
       width: 100%;
-      margin-top: 99px;
       height: 50px !important;
       position: fixed;
       justify-content: center;
@@ -151,7 +151,6 @@
           justify-content: center;
           align-items: center;
           margin-top: 15px;
-          margin-left: 15px !important;
           .selectorIdioma {
             width: 90px !important;
             height: 80px;
@@ -160,6 +159,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            margin-top: 10px;
             .contenedorInternoIdiomas {
               width: 90%;
               height: 90%;

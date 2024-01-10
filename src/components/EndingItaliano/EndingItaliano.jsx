@@ -72,7 +72,7 @@ export const EndingItaliano = () => {
                     <Link to={instagramUrl} target="_blank" rel="noopener noreferrer" className='link'>
                         <div className='cuadradoRedondeadoFollow'>
                             <FontAwesomeIcon className='instagram' icon={ faInstagram }></FontAwesomeIcon>
-                            Follow on Instagram
+                            Segui su instagram
                         </div>
                     </Link>
                 </div>

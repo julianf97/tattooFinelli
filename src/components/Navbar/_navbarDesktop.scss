@@ -5,6 +5,16 @@
     display: none;
   }
 
+  .linkNavbar{
+    color: #fff;
+    text-decoration: none;
+    display: inline;
+  }
+
+  .linkNavbar:hover {
+    color: #d19f68;
+  }
+
   .contenedorNavbar {
     width: 100%;
     height: 50px;
@@ -151,12 +161,12 @@
     .contenedorAbsoluto {
       position: absolute;
       width: 100%;
-      margin-top: 100px;
       height: 50px !important;
       position: fixed;
       justify-content: center;
       display: flex;
       align-items: center;
+      margin-top: 10px;
       .contenedorInteriorAbsoluto {
         width: 99%;
         height: 80%;
@@ -235,7 +245,6 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-left: 12px;
             .contenedorInternoIdiomas {
               width: 90%;
               height: 90%;

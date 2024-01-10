@@ -43,9 +43,9 @@ export const Navbar = ({ isPresentacionVisible }) => {
   useEffect(() => {
     if (isPresentacionVisible) {
       handleExitNavbar();
-      controls.start({ opacity: 0, visibility: "hidden" });
+      controls.start({ opacity: 0, display: "none" });
     } else {
-      controls.start({ opacity: 1, visibility: "visible" });
+      controls.start({ opacity: 1, display: "block" });
     }
   }, [isPresentacionVisible, controls, handleExitNavbar]);
   
@@ -90,15 +90,15 @@ export const Navbar = ({ isPresentacionVisible }) => {
               <nav>
                 <ul>
                   {inglesElegido ? (
-                    <li>BLACK & GRAY</li>
+                    <li> <Link className="linkNavbar" to={"/blackandgrey"}>BLACK & GRAY </Link> </li>
                   ) : (
-                    <li>NERO E GRIGIO</li>
+                    <li><Link className="linkNavbar" to={"/blackandgrey"}>NERO E GRIGIO </Link></li>
                   )}
-                  {inglesElegido ? <li>LETTERING</li> : <li>SCRITTURA</li>}
+                  {inglesElegido ? <Link className="linkNavbar" to={"/lettering"}>LETTERING </Link> : <Link className="linkNavbar" to={"/lettering"}>SCRITTURA </Link>}
                   {inglesElegido ? (
-                    <li>COMMISSIONED ART</li>
+                    <Link className="linkNavbar" to={"/commissionedart"}>COMMISSIONED ART </Link>
                   ) : (
-                    <li>COMMISSIONE ART</li>
+                    <Link className="linkNavbar" to={"/commissionedart"}>COMMISSIONE ART </Link>
                   )}
                 </ul>
               </nav>
