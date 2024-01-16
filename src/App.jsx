@@ -8,7 +8,7 @@ import { useEffect, useState } from 'react';
 import BlackAndGrey from './pages/BlackAndGrey/BlackAndGrey.jsx';
 import CommissionedArt from './pages/CommissionedArt/CommissionedArt.jsx';
 import Lettering from './pages/Lettering/Lettering.jsx';
-import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom';
+import { HashRouter as BrowserRouter, Route, Routes, Navigate } from 'react-router-dom';
 
 function App() {
   const [loaded, setLoaded] = useState(false);
