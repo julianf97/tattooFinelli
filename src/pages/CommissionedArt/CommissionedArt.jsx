@@ -28,7 +28,7 @@ import foto22 from "../../../public/img/commisionedArt/foto22.jpg"
 import foto23 from "../../../public/img/commisionedArt/foto23.jpg"
 
 export default function CommissionedArt() {
-  const { isOpen } = useContext(NavbarContext);
+  const { isOpen, handleExitNavbar } = useContext(NavbarContext);
 
   const useScrollToTopOnMount = () => {
     useEffect(() => {
@@ -36,7 +36,14 @@ export default function CommissionedArt() {
     }, []);
   }
 
+  const useCloseNavbar = () => {
+    useEffect(() => {
+      handleExitNavbar();
+    }, []);
+  }
+
   useScrollToTopOnMount()
+  useCloseNavbar()
 
 
   return (

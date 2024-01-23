@@ -6,9 +6,7 @@ export const LenguajeProvider = ( { children } ) => {
  
     const [idioma, setIdioma] = useState(false);
     const [inglesElegido, setInglesElegido] = useState(false);
-
-   
-
+    
 
     const handleClickModal = () => {
         if( idioma === false ){

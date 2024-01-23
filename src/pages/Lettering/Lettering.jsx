@@ -20,7 +20,7 @@ import foto14 from "../../../public/img/letteing/foto14.jpg"
 import "../BlackAndGrey/_blackandgrey.scss"
 
 export default function Lettering() {
-  const { isOpen } = useContext(NavbarContext);
+  const { isOpen, handleExitNavbar } = useContext(NavbarContext);
 
   const useScrollToTopOnMount = () => {
     useEffect(() => {
@@ -28,7 +28,14 @@ export default function Lettering() {
     }, []);
   }
 
+  const useCloseNavbar = () => {
+    useEffect(() => {
+      handleExitNavbar();
+    }, []);
+  }
+
   useScrollToTopOnMount()
+  useCloseNavbar()
 
 
   return (

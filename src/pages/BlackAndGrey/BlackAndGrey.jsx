@@ -19,7 +19,7 @@ import foto12 from "../../../public/img/blackAndGrey/foto12.jpg"
 import "./_blackandgrey.scss";
 
 export default function BlackAndGrey() {
-  const { isOpen } = useContext(NavbarContext);
+  const { isOpen, handleExitNavbar } = useContext(NavbarContext);
 
   const useScrollToTopOnMount = () => {
     useEffect(() => {
@@ -27,7 +27,14 @@ export default function BlackAndGrey() {
     }, []);
   }
 
+  const useCloseNavbar = () => {
+    useEffect(() => {
+      handleExitNavbar();
+    }, []);
+  }
+
   useScrollToTopOnMount()
+  useCloseNavbar()
 
 
   return (
