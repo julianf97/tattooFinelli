@@ -17,7 +17,7 @@ function App() {
     const handleLoad = () => {
       setTimeout(() => {
         setLoaded(true);
-      }, 500);
+      }, 200);
     };
 
     if (document.readyState === 'complete') {
