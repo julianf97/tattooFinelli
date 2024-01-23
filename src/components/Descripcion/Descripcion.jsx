@@ -1,7 +1,7 @@
 import './_descripcionMobile.scss';
 import './_descripcionIpad.scss';
 import './_descripcionDesktop.scss';
-import image from "../../assets/img/juanmi.jpeg";
+import image from "../../../public/img/juanmi.jpeg";
 
 export const Descripcion = () => {
   return (
@@ -21,7 +21,7 @@ export const Descripcion = () => {
         <div className='contenedorParrafo'>
           <div className='internoParrafo'>
             <p>
-              Inspired by the Renaissance and Baroque eras, I am reinventing what a tattoo experience entails. While many flock to the city of San Diego for the weather, dining, and beaches, contact me for a Southern California experience in tattooing. I cater to not only tattoo enthusiasts, but also likeminded individuals who enjoy a quality custom artpiece. I specialize in fine-line scriptwork, and large-scale, black-and-gray tattoos. Contact me through email and lets begin the consultation process.
+            Born in San Nicolás de los Arroyos, Buenos Aires, Argentina, Juan Manuel Finelli, known as “Sr. Finelli”, is a tattoo artist with a passion for letters and calligraphy. Since 2015, he has developed a unique approach to the world of tattoos, specializing in lettering, calligraphy, Black & Gray and drag pointillism. His philosophy is based on the creation of 100% personalized tattoos, avoiding the repetition of designs, "we are not photocopiers and each tattoo must be unique". Drawing inspiration from various sources (photographs, paintings, books), each tattoo he creates is a unique work that reflects the individuality of his clients.
             </p>
           </div>
         </div>

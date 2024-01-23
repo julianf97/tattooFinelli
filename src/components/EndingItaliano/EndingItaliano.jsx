@@ -1,13 +1,13 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
-import foto1 from "../../assets/img/endingPic/foto1.jpg" 
-import foto2 from "../../assets/img/endingPic/foto2.jpg" 
-import foto3 from "../../assets/img/endingPic/foto3.jpg" 
-import foto4 from "../../assets/img/endingPic/foto4.jpg"  
-import foto5 from "../../assets/img/endingPic/foto5.png" 
-import foto6 from "../../assets/img/endingPic/foto6.jpg" 
-import foto7 from "../../assets/img/endingPic/foto7.jpg" 
-import foto8 from "../../assets/img/endingPic/foto8.png" 
+import foto1 from "../../../public/img/endingPic/foto1.jpg" 
+import foto2 from "../../../public/img/endingPic/foto2.jpg" 
+import foto3 from "../../../public/img/endingPic/foto3.jpg" 
+import foto4 from "../../../public/img/endingPic/foto4.jpg"  
+import foto5 from "../../../public/img/endingPic/foto5.png" 
+import foto6 from "../../../public/img/endingPic/foto6.jpg" 
+import foto7 from "../../../public/img/endingPic/foto7.jpg" 
+import foto8 from "../../../public/img/endingPic/foto8.png" 
 import { Link } from 'react-router-dom';
 import './_endingMobile.scss';
 import './_endingIpad.scss';

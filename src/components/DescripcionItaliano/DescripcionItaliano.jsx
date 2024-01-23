@@ -1,7 +1,7 @@
 import './_descripcionMobile.scss';
 import './_descripcionIpad.scss';
 import './_descripcionDesktop.scss';
-import image from "../../assets/img/juanmi.jpeg";
+import image from "../../../public/img/juanmi.jpeg";
 
 export const DescripcionItaliano = () => {
   return (
@@ -21,7 +21,7 @@ export const DescripcionItaliano = () => {
         <div className='contenedorParrafo'>
           <div className='internoParrafo'>
             <p>
-              Ispirato all'epoca del Rinascimento e del Barocco, sto reinventando ciò che comporta un'esperienza di tatuaggio. Mentre molti affollano la città di San Diego per il clima, la gastronomia e le spiagge, contattami per un'esperienza di tatuaggio in Southern California. Mi rivolgo non solo agli appassionati di tatuaggi, ma anche a persone affini che apprezzano un'opera d'arte personalizzata di qualità. Sono specializzato nel tratto sottile di scrittura e nei tatuaggi di grande scala in bianco e nero. Contattami tramite email e iniziamo il processo di consulenza
+            Nato a San Nicolás de los Arroyos, Buenos Aires, Argentina, Juan Manuel Finelli, conosciuto come “Sr. Finelli”, è un tatuatore con una passione per le lettere e la calligrafia. Dal 2015, ha sviluppato un approccio unico nel mondo dei tatuaggi, specializzandosi nel lettering, nella calligrafia, nel Black & Grey e nel puntinismo di trascinamento. La sua filosofia si basa sulla creazione di tatuaggi 100% personalizzati, evitando la ripetizione di design, “non siamo fotocopiatrici e ogni tatuaggio deve essere unico”. Ispirandosi a varie fonti (fotografie, dipinti, libri), ogni tatuaggio che crea è un’opera unica che riflette l’individualità dei suoi clienti. 
             </p>
           </div>
         </div>
