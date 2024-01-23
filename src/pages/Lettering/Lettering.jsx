@@ -1,7 +1,7 @@
 import Navbar from "../../components/Navbar/Navbar"
 import { NavbarOpen } from "../../components/Navbar/NavbarOpen";
 import { NavbarContext } from "../../context/NavbarContext/NavbarContext";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import foto1 from "../../../public/img/letteing/foto1.jpg"
 import foto2 from "../../../public/img/letteing/foto2.jpg"
 import foto3 from "../../../public/img/letteing/foto3.jpg"
@@ -21,6 +21,15 @@ import "../BlackAndGrey/_blackandgrey.scss"
 
 export default function Lettering() {
   const { isOpen } = useContext(NavbarContext);
+
+  const useScrollToTopOnMount = () => {
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
+  }
+
+  useScrollToTopOnMount()
+
 
   return (
     <>

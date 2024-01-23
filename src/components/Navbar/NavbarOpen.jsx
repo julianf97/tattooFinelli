@@ -18,7 +18,7 @@ export const NavbarOpen = () => {
         <div className='contenedorNav'>
           <ul className='secciones'>
             {
-              inglesElegido ? <Link className="linkNavbar" to={"/blackandgrey"}>BLACK & GRAY </Link> : <li><Link className="linkNavbar" to={"/blackandgrey"}>NERO E GRIGIO </Link></li>
+              inglesElegido ? <Link className="linkNavbar" to={"/blackandgrey"}>BLACK & GRAY </Link> : <Link className="linkNavbar" to={"/blackandgrey"}>NERO E GRIGIO </Link>
             }
             {
               inglesElegido ? <Link className="linkNavbar" to={"/lettering"}>LETTERING </Link> : <Link className="linkNavbar" to={"/lettering"}>SCRITTURA </Link>

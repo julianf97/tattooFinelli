@@ -1,6 +1,7 @@
 import Navbar from "../../components/Navbar/Navbar";
 import { NavbarOpen } from "../../components/Navbar/NavbarOpen";
 import { NavbarContext } from "../../context/NavbarContext/NavbarContext";
+import { useEffect } from "react";
 import { useContext } from "react";
 import foto1 from "../../../public/img/blackAndGrey/foto1.jpg"
 import foto2 from "../../../public/img/blackAndGrey/foto2.jpg"
@@ -19,6 +20,15 @@ import "./_blackandgrey.scss";
 
 export default function BlackAndGrey() {
   const { isOpen } = useContext(NavbarContext);
+
+  const useScrollToTopOnMount = () => {
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
+  }
+
+  useScrollToTopOnMount()
+
 
   return (
     <>

@@ -1,7 +1,7 @@
 import Navbar from "../../components/Navbar/Navbar";
 import { NavbarOpen } from "../../components/Navbar/NavbarOpen";
 import { NavbarContext } from "../../context/NavbarContext/NavbarContext";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import "../BlackAndGrey/_blackandgrey.scss";
 import foto1 from "../../../public/img/commisionedArt/foto1.jpg"
 import foto2 from "../../../public/img/commisionedArt/foto2.jpg"
@@ -29,6 +29,15 @@ import foto23 from "../../../public/img/commisionedArt/foto23.jpg"
 
 export default function CommissionedArt() {
   const { isOpen } = useContext(NavbarContext);
+
+  const useScrollToTopOnMount = () => {
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
+  }
+
+  useScrollToTopOnMount()
+
 
   return (
     <>
